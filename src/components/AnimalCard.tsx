@@ -11,22 +11,26 @@ interface IAnimalProps {
 export const AnimalCard = ({ animals }: IAnimalProps) => {
   const navigate = useNavigate();
 
+  // Hanterar klick på ett djurkort och navigerar till djurets detaljsida
   const handleClick = (animal: IAnimal) => {
     navigate(`/animal/${animal.id}`);
   };
 
+  // Hanterar tangenttryckningar (specifikt "Enter") för att navigera
   const handleKeyEnter = (e: React.KeyboardEvent, animal: IAnimal) => {
     if (e.key === "Enter") {
       navigate(`/animal/${animal.id}`);
     }
   };
 
+  // Bestämmer vilken CSS-klass som ska tillämpas baserat på hur länge djuret har varit utan mat
   const getFeedingStatusClass = (hoursSinceFed: number) => {
     if (hoursSinceFed < 3) return "isFed";
     if (hoursSinceFed < 4) return "gettingHungry";
     return "isHungry";
   };
 
+  // Returnerar text som beskriver djurets matstatus baserat på hur länge det har varit utan mat
   const getFeedingStatusText = (hoursSinceFed: number) => {
     if (hoursSinceFed < 3) return "har fått mat.";
     if (hoursSinceFed < 4) return "börjar bli hungrig.";
