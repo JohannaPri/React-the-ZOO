@@ -12,7 +12,7 @@ export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAn
 
   return (
     <div className='animal-presentation'>
-      {/* Header with back button */}
+      {/* Header med tillbaka-knapp */}
       <div className='animal-presentation-header'>
         <button
           className='button-back material-symbols-outlined'
@@ -21,11 +21,11 @@ export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAn
         </button>
       </div>
 
-      {/* Animal name and birth year */}
+      {/* Djurets namn och födelseår */}
       <span className='animal-name'>{animal?.name}</span>
       <p><span className='text-bold'>Födelseår:</span> {animal?.yearOfBirth}</p>
 
-      {/* Animal image with fallback */}
+      {/* Djurets bild med fallback om bilden inte laddas */}
       <div className='animal-image-container'>
         <img
           className='animal-image'
@@ -39,7 +39,7 @@ export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAn
         />
       </div>
 
-      {/* Detailed information and feed button */}
+      {/* Detaljerad information och matningsknapp */}
       <div className='animal-text-container animal-short-desc'>
         <span className='animal-about'>OM</span>
         <p><span className='text-bold'>Latinskt namn: </span>{animal?.latinName}</p>
@@ -55,7 +55,7 @@ export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAn
         </button>
       </div>
 
-      {/* Footer with back button */}
+      {/* Footer med tillbaka-knapp */}
       <div
         className='animal-presentation-footer'
         onClick={handleBack}>
