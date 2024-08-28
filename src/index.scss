@@ -52,11 +52,12 @@ button {
 
 button:hover {
   border-color:#A64B4B; 
+  outline: 1px solid #A64B4B;
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto #D8B89C;
+  outline: 2px solid #A64B4B;
 }
 
 
