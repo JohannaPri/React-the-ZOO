@@ -1,25 +1,16 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+import { Navigation } from "./Navigation"
 
 export const Layout = () => {
-    return <>
-        <header>
-            <ul>
-                <li>
-                <NavLink to="/">Hem</NavLink>
-                </li>
-                <li>
-                <NavLink to="/about">Om</NavLink>
-                </li>
-                <li>
-                <NavLink to="/animals">Djur</NavLink>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <Outlet></Outlet>
-        </main>
-        <footer>
 
-        </footer>
-    </>
+  return <>
+    <header>
+      <Navigation></Navigation>
+    </header>
+    <main>
+      <Outlet></Outlet>
+    </main>
+    <footer></footer>
+  </>
+
 }
