@@ -4,13 +4,12 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Animals } from "./pages/Animals";
 import { Animal } from "./pages/Animal";
-import { NotFound } from "./components/NotFound";
+import { animalsLoader } from "./loaders/animalsLoader";
 
 export const router = createBrowserRouter ([
     {
         path: "/",
         element: <Layout></Layout>,
-        errorElement: <NotFound></NotFound>,
         children: [
             {
                 path: "/",
@@ -23,6 +22,7 @@ export const router = createBrowserRouter ([
             {
                 path: "/animals",
                 element: <Animals></Animals>,
+                loader: animalsLoader,
             },
             {
                 path: "/animal/:id",
