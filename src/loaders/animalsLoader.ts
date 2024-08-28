@@ -6,6 +6,12 @@ export interface IAnimalsLoader {
   error: string;
 }
 
+/**
+ * Hämtar djurdata från API och hanterar eventuella fel.
+ * 
+ * @returns Ett objekt med djurdata och felmeddelande (om något fel uppstod).
+ */
+
 export const animalsLoader = async (): Promise<IAnimalsLoader> => {
   const data: IAnimalsLoader = { animalList: [], error: '' };
 
