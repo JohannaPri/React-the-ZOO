@@ -1,14 +1,14 @@
 import { IAnimal } from "../models/IAnimal";
-import { fetchData } from "./ServiceBase";
+import { get } from "./ServiceBase";
 
 const BASE_URL = 'https://animals.azurewebsites.net/api/animals';
 
-export const getAnimals = async (): Promise<IAnimal[]> => {
-    try {
-        const animals = await fetchData<IAnimal[]>(BASE_URL);
-        return animals;
-    } catch (error) {
-        console.error("Failed to fetch animals:", error);
-        throw error; 
-    }
+export const getAnimalAPI = async (): Promise<IAnimal[] | undefined> => {
+  try {
+    const response = await get<IAnimal[]>(BASE_URL);
+    return response;
+  } catch (error) {
+    console.error('Failed to fetch animals:', error);
+    return undefined;
+  }
 };
