@@ -5,11 +5,13 @@ import { About } from "./pages/About";
 import { Animals } from "./pages/Animals";
 import { Animal } from "./pages/Animal";
 import { animalsLoader } from "./loaders/animalsLoader";
+import { NotFound } from "./pages/NotFound";
 
 export const router = createBrowserRouter ([
     {
         path: "/",
         element: <Layout></Layout>,
+        errorElement: <NotFound></NotFound>,
         children: [
             {
                 path: "/",
