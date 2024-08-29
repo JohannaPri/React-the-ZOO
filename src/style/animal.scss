@@ -1,43 +1,53 @@
+// ================================
+// Animal Card Container
+// ================================
+
 .animal-card-container {
-    border: 2px solid #B86F51;
-    margin-bottom: 2rem;
-    width: 370px;
-    height: 100%;
-    color: black;
-    border-radius: 10px;
-  
-    &.isFed {
-      outline: 4px solid  #4CAF50;
+  border: 2px solid #B86F51;
+  margin-bottom: 2rem;
+  width: 370px;
+  height: 100%;
+  color: black;
+  border-radius: 10px;
+
+  // Status variations
+  &.isFed {
+    outline: 4px solid #4CAF50;
+  }
+
+  &.gettingHungry {
+    outline: 6px solid #F0E54C;
+
+    .span {
+      font-style: italic;
     }
-  
-    &.gettingHungry {
-      outline: 6px solid  #F0E54C;
-  
-      .span {
-        font-style: italic;
-      }
+  }
+
+  &.isHungry {
+    outline: 8px solid #C62828;
+
+    .span {
+      font-weight: bold;
     }
-  
-    &.isHungry {
-      outline: 8px solid  #C62828;
-  
-      .span {
-        font-weight: bold;
-      }
-    }
-  
-    &:hover, &:active {
-      cursor: pointer;
-      outline: 6px solid  #B86F51;
-    }
-      
-    &:focus,
-    &:focus-visible {
+  }
+
+  // Interaction styles
+  &:hover,
+  &:active {
+    cursor: pointer;
+    outline: 6px solid #B86F51;
+  }
+
+  &:focus,
+  &:focus-visible {
     outline: 4px solid #B86F51;
-   
   }
 }
-  
+
+// ================================
+// Animal Name
+// ================================
+
 .animal-name {
   font-size: 3.5rem;
   font-family: 'Roboto Slab';
@@ -45,33 +55,45 @@
   font-weight: 500;
   letter-spacing: 0.2rem;
 }
-  
+
+// ================================
+// Animal IsFed Status
+// ================================
+
 .animal-isFed-status {
-  outline: 2px solid #B86F51;
-  
+  outline: 1px solid #B86F51;
+
   span {
     outline: none;
     padding: 0.4em 4em;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: capitalize;
   }
 }
-  
+
+// ================================
+// Animal Image Container
+// ================================
+
 .animal-image-container {
   width: 370px;
   height: 400px;
   overflow: hidden;
   margin-top: 1rem;
-    
+
   img {
     object-fit: cover;
     width: 100%;
-    height: 100%
+    height: 100%;
   }
 }
-  
+
+// ================================
+// Animal Short Description
+// ================================
+
 .animal-short-desc {
   text-align: center;
   margin: 1rem;
@@ -79,7 +101,11 @@
   line-height: 1.6rem;
   font-family: 'Roboto';
 }
-  
+
+// ================================
+// Animal Presentation
+// ================================
+
 .animal-presentation {
   border: 3px solid #B86F51;
   margin-bottom: 2rem;
@@ -87,11 +113,20 @@
   height: 100%;
   border-radius: 10px;
 }
-  
-.animal-presentation-header, .animal-presentation-footer {
+
+// ================================
+// Animal Presentation Header & Footer
+// ================================
+
+.animal-presentation-header,
+.animal-presentation-footer {
   display: flex;
 }
-  
+
+// ================================
+// Buttons
+// ================================
+
 .button-back {
   background-color: transparent;
   color: black;
@@ -99,7 +134,7 @@
   padding: 0.3em 0.3em;
   animation: loader 2s cubic-bezier(0.5, 0, 0.5, 1) forwards;
 }
-  
+
 .button-feed {
   background-color: #B86F51;
   color: black;
@@ -107,88 +142,107 @@
   letter-spacing: 0.07rem;
   padding: 0.6em 1.5em;
   font-family: 'Roboto Slab';
-  
+
   &:disabled {
     color: whitesmoke;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3); 
-    cursor: not-allowed; 
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
   }
 }
-  
-.animal-about-heading {
-  font-size: 1.6rem;
-  font-family: 'Roboto Slab';
-  text-transform: capitalize;
-  letter-spacing: 0.05rem;
-}
 
+// ================================
+// Animal About Us
+// ================================
+
+.animal-about-heading,
 .animal-about {
   font-size: 1.6rem;
   font-family: 'Roboto Slab';
   text-transform: capitalize;
   letter-spacing: 0.05rem;
 }
-  
+
+// ================================
+// Text Styles
+// ================================
+
 .text-bold {
   font-weight: 600;
   font-family: 'Roboto Slab';
   letter-spacing: 0.05rem;
 }
-  
+
+// ================================
+// About Section
+// ================================
+
 .about-section {
   max-width: 686px;
-  text-align: center; 
-  padding: 2rem; 
+  text-align: center;
+  padding: 2rem;
   background-color: #F5E9E1;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-  
-.about-text-left {
-  font-family: 'Roboto' sans-serif;
-  line-height: 1.6;
-  letter-spacing: 0.01rem;
-}
-  
+
+// ================================
+// About Text Styles
+// ================================
+
+.about-text-left,
 .about-text-left-bold {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  font-weight: 600;
   letter-spacing: 0.01rem;
 }
-  
+
+.about-text-left-bold {
+  font-weight: 600;
+}
+
+// ================================
+// Headings
+// ================================
+
 h2 {
   font-family: 'Roboto Slab';
   font-size: 1.6rem;
   letter-spacing: 0.08rem;
   text-transform: capitalize;
 }
-  
+
+// ================================
+// About Thank
+// ================================
+
 .about-thank {
   font-family: 'Roboto';
   font-size: 1.2rem;
 }
-    
-@media screen and (min-width: 768px) {
 
+// ================================
+// Media Queries
+// ================================
+
+@media screen and (min-width: 768px) {
   .animal-name {
     font-size: 3.5rem;
   }
-    
+
   .animal-cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     column-gap: 4rem;
     justify-content: center;
   }
-  
+
   .animal-card-container {
     border: 1px solid #B86F51;
     margin-bottom: 4rem;
     width: 300px;
     height: 730px;
   }
-  
+
   .animal-image-container {
     width: 100%;
     height: 400px;
@@ -197,21 +251,19 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
-  
   .animal-cards-wrapper {
     flex-wrap: wrap;
     column-gap: 4rem;
     justify-content: none;
   }
-  
+
   .animal-card-container {
     height: 700px;
   }
-  
+
   .animal-image-container {
     width: 100%;
     height: 300px;
     margin-top: 1rem;
   }
-  
 }
