@@ -1,12 +1,14 @@
+// ================================
+// Global Styles
+// ================================
+
 :root {
   max-width: 500px;
   margin: 0 auto;
-  
-  font-family: 'Roboto', Avenir, Helvetica, Arial, sans-serif ;
+  font-family: 'Roboto', Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: black;
   background-color: #D8B89C;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,23 +16,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  text-decoration: none;
-
-}
-
-a:hover div {
-  outline: solid 2px #A64B4B;
-}
+// ================================
+// Body Styles
+// ================================
 
 body {
   margin: 0;
   display: flex;
   justify-content: center;
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
+
+// ================================
+// Heading Styles
+// ================================
 
 h1 {
   font-size: 3.6em;
@@ -40,6 +40,21 @@ h1 {
   font-weight: 600;
 }
 
+// ================================
+// Anchor Styles
+// ================================
+
+a {
+  text-decoration: none;
+  &:hover div {
+    outline: solid 2px #A64B4B;
+  }
+}
+
+// ================================
+// Button Styles
+// ================================
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -48,25 +63,26 @@ button {
   background-color: #B86F51;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  &:hover {
+    border-color: #A64B4B;
+    outline: 1px solid #A64B4B;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid #A64B4B;
+  }
 }
 
-button:hover {
-  border-color:#A64B4B; 
-  outline: 1px solid #A64B4B;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 2px solid #A64B4B;
-}
-
+// ================================
+// Media Queries
+// ================================
 
 @media screen and (min-width: 768px) {
-  :root{
+  :root {
     max-width: 750px;
-  
   }
-  
 }
 
 @media screen and (min-width: 1200px) {
