@@ -1,4 +1,4 @@
-import '../style/loader.scss'
+import '../style/loading-animation.scss'
 
 export const Loader = () => {
 

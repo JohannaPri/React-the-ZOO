@@ -1,4 +1,5 @@
-import '../style/animal.scss'
+import '../style/animal.scss';
+import '../style/about.scss';
 
 export const About = () => {
 
