@@ -8,7 +8,7 @@ import { Loader } from "../components/Loader";
 // Komponent för att visa en lista med djur
 export const Animals = () => {
   const [animals, setAnimals] = useState<IAnimal[]>(() => {
-    // Hämta djurdata från sessionStorage eller använd en tom array
+    // Hämtar djurdata från sessionStorage eller använd en tom array
     const storedAnimals = sessionStorage.getItem("animals");
     return storedAnimals ? JSON.parse(storedAnimals) : [];
   });
@@ -17,7 +17,7 @@ export const Animals = () => {
   useEffect(() => {
     const fetchAnimals = async () => {
       try {
-        // Hämta djurdata från API om ingen data finns i state
+        // Hämtar djurdata från API om ingen data finns i state
         if (animals.length === 0) {
           const response = await getAnimalAPI();
           if (response) {
@@ -28,7 +28,7 @@ export const Animals = () => {
       } catch (error) {
         console.error("Error fetching animals:", error);
       } finally {
-        // Uppdatera laddningsstatus när data har hämtats eller ett fel har inträffat
+        // Uppdaterar laddningsstatus när data har hämtats eller ett fel har inträffat
         setIsLoading(false);
       }
     };

@@ -10,7 +10,7 @@ import { Loader } from '../components/Loader';
 export const Animal = () => {
   const [disabled, setDisabled] = useState(false);
   const [animals, setAnimals] = useState<IAnimal[]>(() => {
-    // Hämta djurdata från sessionStorage eller använd en tom array om inga djur är sparade
+    // Hämtar djurdata från sessionStorage eller använd en tom array om inga djur är sparade
     const storedAnimals = sessionStorage.getItem('animals');
     return storedAnimals ? JSON.parse(storedAnimals) : [];
   });
@@ -18,30 +18,30 @@ export const Animal = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-  // Hitta det aktuella djuret baserat på route-parametern
+  // Hittar det aktuella djuret baserat på route-parametern
   const findAnimal = animals.find(animal => animal.id === Number(id));
 
   useEffect(() => {
     if (findAnimal) {
-      // Beräkna antal timmar sedan djuret senast blev matad
+      // Beräknar antal timmar sedan djuret senast blev matad
       const hoursSinceFed = calculateHoursSinceFed(new Date(findAnimal.lastFed));
-      // Aktivera eller avaktivera knappen baserat på om djuret behöver mat
+      // Aktiverar eller avaktiverar knappen baserat på om djuret behöver mat
       setDisabled(hoursSinceFed < 3);
     }
   }, [findAnimal]);
 
-  // Hantera navigering tillbaka till djurlistan
+  // Hanterar navigering tillbaka till djurlistan
   const handleBack = () => {
     navigate('/animals');
   };
 
-  // Hantera matning av det aktuella djuret
+  // Hanterar matning av det aktuella djuret
   const clickToFeed = (animal: IAnimal) => {
     const updatedAnimals = animals.map(a => 
       a.id === animal.id ? { ...a, isFed: true, lastFed: new Date().toLocaleString('sv-SE') } : a
     );
 
-    // Uppdatera djurdata i state och sessionStorage
+    // Uppdaterar djurdata i state och sessionStorage
     setAnimals(updatedAnimals);
     sessionStorage.setItem('animals', JSON.stringify(updatedAnimals));
     setDisabled(true);

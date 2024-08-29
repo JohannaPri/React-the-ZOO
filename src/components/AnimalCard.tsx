@@ -32,8 +32,8 @@ export const AnimalCard = ({ animals }: IAnimalProps) => {
 
   // Returnerar text som beskriver djurets matstatus baserat på hur länge det har varit utan mat
   const getFeedingStatusText = (hoursSinceFed: number) => {
-    if (hoursSinceFed < 3) return "har fått mat.";
-    if (hoursSinceFed < 4) return "börjar bli hungrig.";
+    if (hoursSinceFed < 3) return "har fått mat!";
+    if (hoursSinceFed < 4) return "börjar bli hungrig!";
     return "behöver bli matad!";
   };
 

@@ -9,7 +9,7 @@ export const getAnimalAPI = async (): Promise<IAnimal[] | undefined> => {
     const response = await get<IAnimal[]>(BASE_URL);
     return response;
   } catch (error) {
-    // Hantera eventuella fel som uppstår vid hämtning av data
+    // Hanterar eventuella fel som uppstår vid hämtning av data
     console.error('Failed to fetch animals:', error);
     return undefined;
   }
