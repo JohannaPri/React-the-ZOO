@@ -1,54 +1,73 @@
+// ================================
+// Navigation Container
+// ================================
+
 .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  
+  // ================================
+  // Logo Container
+  // ================================
+
+  .logo-container {
+    width: 80px;
+    height: 50px;
+    padding-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  // ================================
+  // Navigation List
+  // ================================
+  
+  ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0rem;
+    margin-top: 2.2rem;
+    padding: 0;
+
+    // ================================
+    // List Items
+    // ================================
   
+    li {
+      margin-left: 1rem;
+      list-style: none;
+    }
+
+    // ================================
+    // Navigation Buttons
+    // ================================
   
-    .logo-container {
-      width: 80px;
-      height: 50px;
-      padding-top: 0.5rem;
+    div {
+      background-color: #B86F51;
+      color: black;
+      font-family: 'Roboto Slab';
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 0;
+      margin-right: 0;
+      padding: 0.4rem 0.9rem;
+      border-radius: 10px;
+      letter-spacing: 0.05rem;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
       cursor: pointer;
-  
-    }
-  
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 0rem;
-      margin-top: 2.2rem;
-      padding: 0;
-  
-  
-      li {
-        margin-left: 1rem;
-        list-style: none;
-      }
-  
-      div {
-        background-color: #B86F51;
-        color: black;
-        font-family: 'Roboto Slab';
-        font-size: 0.9rem;
-        font-weight: 600;
-        margin: 0;
-        margin-right: 0;
-        padding: 0.4rem 0.9rem;
-        border-radius: 10px;
-        letter-spacing: 0.05rem;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-      }
     }
   }
-  
-  @media screen and (min-width: 768px) {
-    .navigation {
-  
-      margin-bottom: 0.2rem;
-  
-    }
+}
+
+// ================================
+// Media Queries
+// ================================
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-bottom: 0.2rem;
   
   }
+}
