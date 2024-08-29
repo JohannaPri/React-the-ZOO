@@ -1,14 +1,13 @@
-import '../style/loading-animation.scss'
+import "../style/loading-animation.scss";
 
 export const Loader = () => {
 
   return <>
-    <div className='loader'>
+    <div className="loader">
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
   </>
-
 }

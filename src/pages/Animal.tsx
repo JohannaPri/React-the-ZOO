@@ -1,17 +1,17 @@
-import '../style/animal.scss';
+import "../style/animal.scss";
 import { useNavigate, useParams } from "react-router-dom";
-import { IAnimal } from '../models/IAnimal';
-import { AnimalDetails } from '../components/AnimalDetails';
-import { useEffect, useState } from 'react';
-import { calculateHoursSinceFed } from '../functions/dateTimeUtils';
-import { Loader } from '../components/Loader';
+import { IAnimal } from "../models/IAnimal";
+import { AnimalDetails } from "../components/AnimalDetails";
+import { useEffect, useState } from "react";
+import { calculateHoursSinceFed } from "../functions/dateTimeUtils";
+import { Loader } from "../components/Loader";
 
 // Komponent för att visa och hantera djurdetaljer
 export const Animal = () => {
   const [disabled, setDisabled] = useState(false);
   const [animals, setAnimals] = useState<IAnimal[]>(() => {
     // Hämtar djurdata från sessionStorage eller använd en tom array om inga djur är sparade
-    const storedAnimals = sessionStorage.getItem('animals');
+    const storedAnimals = sessionStorage.getItem("animals");
     return storedAnimals ? JSON.parse(storedAnimals) : [];
   });
 
@@ -32,18 +32,18 @@ export const Animal = () => {
 
   // Hanterar navigering tillbaka till djurlistan
   const handleBack = () => {
-    navigate('/animals');
+    navigate("/animals");
   };
 
   // Hanterar matning av det aktuella djuret
   const clickToFeed = (animal: IAnimal) => {
     const updatedAnimals = animals.map(a => 
-      a.id === animal.id ? { ...a, isFed: true, lastFed: new Date().toLocaleString('sv-SE') } : a
+      a.id === animal.id ? { ...a, isFed: true, lastFed: new Date().toLocaleString("sv-SE") } : a
     );
 
     // Uppdaterar djurdata i state och sessionStorage
     setAnimals(updatedAnimals);
-    sessionStorage.setItem('animals', JSON.stringify(updatedAnimals));
+    sessionStorage.setItem("animals", JSON.stringify(updatedAnimals));
     setDisabled(true);
   };
 
@@ -62,4 +62,3 @@ export const Animal = () => {
     </>
   );
 };
-

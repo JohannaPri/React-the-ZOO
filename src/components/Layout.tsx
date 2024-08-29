@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom"
-import { Navigation } from "./Navigation"
+import { Outlet } from "react-router-dom";
+import { Navigation } from "./Navigation";
 
 // Layout-komponent som innehåller Navigation och renderar de inre komponenterna via Outlet
 export const Layout = () => {

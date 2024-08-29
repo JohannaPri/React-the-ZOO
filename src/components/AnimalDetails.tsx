@@ -8,27 +8,27 @@ interface IAnimalProps {
 }
 
 export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAnimalProps) => {
-  const fallbackImg = '/error-notFound.png';
+  const fallbackImg = "/error-notFound.png";
 
   return (
-    <div className='animal-presentation'>
+    <div className="animal-presentation">
       {/* Header med tillbaka-knapp */}
-      <div className='animal-presentation-header'>
+      <div className="animal-presentation-header">
         <button
-          className='button-back material-symbols-outlined'
+          className="button-back material-symbols-outlined"
           onClick={handleBack}>
           arrow_back_ios_new
         </button>
       </div>
 
       {/* Djurets namn och födelseår */}
-      <span className='animal-name'>{animal?.name}</span>
-      <p><span className='text-bold'>Födelseår:</span> {animal?.yearOfBirth}</p>
+      <span className="animal-name">{animal?.name}</span>
+      <p><span className="text-bold">Födelseår:</span> {animal?.yearOfBirth}</p>
 
       {/* Djurets bild med fallback om bilden inte laddas */}
-      <div className='animal-image-container'>
+      <div className="animal-image-container">
         <img
-          className='animal-image'
+          className="animal-image"
           src={animal?.imageUrl}
           alt={animal?.name}
           width={300}
@@ -40,14 +40,14 @@ export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAn
       </div>
 
       {/* Detaljerad information och matningsknapp */}
-      <div className='animal-text-container animal-short-desc'>
-        <span className='animal-about'>OM</span>
-        <p><span className='text-bold'>Latinskt namn: </span>{animal?.latinName}</p>
+      <div className="animal-text-container animal-short-desc">
+        <span className="animal-about">OM</span>
+        <p><span className="text-bold">Latinskt namn: </span>{animal?.latinName}</p>
         <p>{animal?.longDescription}</p>
-        <p><span className='text-bold'>Mediciner:</span> {animal?.medicine}</p>
-        <p><span className='text-bold'>Senast matad:</span> {animal?.lastFed}</p>
+        <p><span className="text-bold">Mediciner:</span> {animal?.medicine}</p>
+        <p><span className="text-bold">Senast matad:</span> {animal?.lastFed}</p>
         <button
-          className='button-feed'
+          className="button-feed"
           onClick={() => clickToFeed(animal)}
           disabled={disabled}
         >
@@ -57,10 +57,10 @@ export const AnimalDetails = ({ animal, handleBack, clickToFeed, disabled }: IAn
 
       {/* Footer med tillbaka-knapp */}
       <div
-        className='animal-presentation-footer'
+        className="animal-presentation-footer"
         onClick={handleBack}>
         <button
-          className='button-back material-symbols-outlined'>
+          className="button-back material-symbols-outlined">
           arrow_back_ios_new
         </button>
       </div>

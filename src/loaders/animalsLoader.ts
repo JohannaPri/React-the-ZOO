@@ -20,11 +20,11 @@ export const animalsLoader = async (): Promise<IAnimalsLoader> => {
     if (response) {
       data.animalList = response;
     } else {
-      data.error = 'No response from the API';
+      data.error = "No response from the API";
     }
   } catch (error) {
-    console.error('An error occurred:', error);
-    data.error = 'Something went wrong. Please try again later.';
+    console.error("An error occurred:", error);
+    data.error = "Something went wrong. Please try again later.";
   }
 
   return data;

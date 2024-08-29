@@ -1,7 +1,7 @@
-import { RouterProvider } from 'react-router-dom'
-import './App.scss'
-import { router } from './Router'
-import { AnimalProvider } from './components/AnimalContext'
+import { RouterProvider } from "react-router-dom";
+import "./App.scss";
+import { router } from "./Router";
+import { AnimalProvider } from "./components/AnimalContext";
 
 function App() {
 

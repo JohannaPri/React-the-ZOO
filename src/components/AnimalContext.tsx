@@ -1,5 +1,5 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
-import { IAnimal } from '../models/IAnimal';
+import { createContext, useContext, useState, ReactNode } from "react";
+import { IAnimal } from "../models/IAnimal";
 
 // Definierar typen för värdet som kommer att lagras i Context
 interface IAnimalContextValue {
@@ -25,7 +25,7 @@ export const useAnimalContext = () => {
   const context = useContext(AnimalContext);
   // Kontrollera att Hooken används inom en AnimalProvider
   if (!context) {
-    throw new Error('useAnimalContext must be used within an AnimalProvider');
+    throw new Error("useAnimalContext must be used within an AnimalProvider");
   }
   return context;
 };
