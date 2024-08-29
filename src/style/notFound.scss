@@ -1,0 +1,26 @@
+.error-heading {
+    font-family: 'Roboto slab';
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+}
+
+.error-text {
+    font-family: 'Roboto';  
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.error-link {
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+    font-family: 'Roboto Slab';
+    letter-spacing: 0.02rem;
+}
+
+.error-link:hover {
+    color: #B86F51;
+    font-weight: bold;
+}
