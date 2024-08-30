@@ -23,7 +23,7 @@ export const AnimalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
 // Custom Hook för att använda AnimalContext
 export const useAnimalContext = () => {
   const context = useContext(AnimalContext);
-  // Kontrollera att Hooken används inom en AnimalProvider
+  // Kontrollerar att Hooken används inom en AnimalProvider
   if (!context) {
     throw new Error("useAnimalContext must be used within an AnimalProvider");
   }
