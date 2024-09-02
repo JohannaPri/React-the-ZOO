@@ -8,12 +8,15 @@ import { getAnimalAPI } from "../service/AnimalService";
 import { Loader } from "../components/Loader";
 
 export const Home = () => {
+  // State för att hålla en lista över hungriga djur
   const [hungryAnimals, setHungryAnimals] = useState<IAnimal[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // useEffect körs vid första renderingen för att hämta djurdata
   useEffect(() => {
     const fetchAnimals = async () => {
       try {
+        // Försöker hämta djurdata från sessionStorage om den finns
         const storedAnimals = sessionStorage.getItem("animals");
         let animals: IAnimal[] = [];
 
@@ -27,11 +30,13 @@ export const Home = () => {
           }
         }
 
+        // Filtrerar ut djur som har blivit matade för 4 eller fler timmar sedan
         const hungry = animals.filter(animal => {
           const hoursSinceFed = calculateHoursSinceFed(new Date(animal.lastFed));
           return hoursSinceFed >= 4; 
         });
 
+        // Uppdaterar state med de hungriga djuren
         setHungryAnimals(hungry);
       } catch (error) {
         console.error("Error fetching animals:", error);
@@ -40,6 +45,7 @@ export const Home = () => {
       }
     };
 
+    // Startar funktionen för att hämta djurdata vid komponentens första render
     fetchAnimals();
   }, []);
 
