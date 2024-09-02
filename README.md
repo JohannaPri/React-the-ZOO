@@ -48,15 +48,3 @@ The project required us to create an interactive and responsive webpage that not
 #### Published: 2024
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
