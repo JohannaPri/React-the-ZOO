@@ -81,15 +81,16 @@
 
 .hungry-animals li {
   font-size: 1.2em;
-  margin: 8px 0;
+  margin: 10px 0;
   color: black;
-  padding: 10px;
+  padding: 12px;
   border-radius: 10px;
   transition: background-color 0.3s;
   background-color: rgba(184, 111, 81, 0.7);
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.06rem;
   font-family: 'Roboto';
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
 }
 
 .hungry-animals li:hover {
