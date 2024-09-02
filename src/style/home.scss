@@ -46,6 +46,10 @@
   }
 }
 
+// ================================
+// List Animals Hungry Home
+// ================================
+
 .hungry-animals {
   background-color: #D4B5A3; 
   border-radius: 10px;
@@ -103,6 +107,7 @@
 // ================================
 // Media Queries
 // ================================
+
 @media screen and (min-width: 768px) {
   .hero-img {
     width: 700px;
