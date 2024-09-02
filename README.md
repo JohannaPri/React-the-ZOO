@@ -55,8 +55,11 @@ The project required us to create an interactive and responsive webpage that not
 #### Specific Animal (Fed)
 ![Specific Animal](/public/screenshots/SpecificAnimalFed.png) 
 
-#### Specific Animal Not (Fed)
+#### Specific Animal (Not Fed)
 ![Specific Animal Not Fed](/public/screenshots/SpecificAnimalNotFed.png)
+
+#### Error Handling
+![Specific Animal Not Fed](/public/screenshots/error.png)
 
 ---
 
