@@ -46,6 +46,60 @@
   }
 }
 
+.hungry-animals {
+  background-color: #D4B5A3; 
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  min-width: 335px;
+  margin: 20px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  text-align: center; 
+  font-family: 'Roboto Slab', serif; 
+  margin-top: 250px;
+}
+
+.hungry-animals h2 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  color: black; 
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 0.09rem;
+  font-weight: 600;
+}
+
+.hungry-animals ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hungry-animals li {
+  font-size: 1.2em;
+  margin: 8px 0;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  background-color: rgba(184, 111, 81, 0.7);
+  letter-spacing: 0.05rem;
+  font-family: 'Roboto';
+}
+
+.hungry-animals li:hover {
+  outline: 4px solid #B86F51;
+  cursor: not-allowed;
+}
+
+.hungry-animals p {
+  font-size: 1.6rem;
+  color: black;
+  letter-spacing: 0.08rem;
+  font-family: 'Roboto';
+  font-style: italic;
+}
+
 // ================================
 // Media Queries
 // ================================
@@ -57,6 +111,11 @@
   .hero-info img {
     width: 500px;
   }
+
+  .hungry-animals {
+    margin-top: 130px;
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -66,5 +125,10 @@
 
   .hero-info img {
     width: 500px;
+  }
+
+  .hungry-animals {
+    margin-top: 130px;
+    width: 60%;
   }
 }
