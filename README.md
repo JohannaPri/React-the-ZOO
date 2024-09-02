@@ -29,7 +29,7 @@ The project required us to create an interactive and responsive webpage that not
 
 ## ⚙️ How To Run The Project
 
-- #### **Clona the repository from GitHub:**
+- #### **Clone the repository from GitHub:**
     - git clone https://github.com/Medieinstitutet/the-zoo-JohannaPri
 
 - #### **Install the dependencies:**
