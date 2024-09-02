@@ -1,5 +1,7 @@
 # The ZOO 
 
+---
+
 ## 📄 About The Project 
 
 **During the "Advanced JavaScript" course at Medieinstitutet, we were assigned the task of developing a website for The Zoo using React and TypeScript.**
