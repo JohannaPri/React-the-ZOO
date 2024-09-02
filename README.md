@@ -1,11 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Fj2E3Yxb)
 # The ZOO 
-
-### Link to project (The ZOO)
-
-// Länk ska läggas till här
-
----
 
 ## 📄 About The Project 
 
@@ -43,6 +36,25 @@ The project required us to create an interactive and responsive webpage that not
 [![Github](https://img.shields.io/badge/Johanna%20Prinz-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JohannaPri)
 
 [![LinkdIn](https://img.shields.io/badge/Johanna%20Prinz-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-prinz-246b45165/)
+
+---
+
+## 📷 Screenshots Of Project
+
+#### Home Page
+![Home Page](/public/screenshots/homePage.png)
+
+#### About Us
+![About Us](/public/screenshots/AboutUs.png)
+
+#### All Animals
+![All Animals](/public/screenshots/AllAnimals.png)
+
+#### Specific Animal (Fed)
+![Specific Animal](/public/screenshots/SpecificAnimalFed.png) 
+
+#### Specific Animal Not (Fed)
+![Specific Animal Not Fed](/public/screenshots/SpecificAnimalNotFed.png)
 
 ---
 
