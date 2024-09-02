@@ -6,7 +6,7 @@ export const NotFound = () => {
   return (
     <div className="not-found-error">
       <h1 className="error-heading">Whoopsie...</h1>
-      <img
+      <img className="error-notfound-image"
         src="/error-notfound-large.png" 
         alt="Error"
         style={{ width: '500px'}}

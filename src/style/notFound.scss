@@ -1,7 +1,23 @@
+.not-found-error { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
 .error-heading {
     font-family: 'Roboto slab';
     font-size: 4rem;
     letter-spacing: 0.1rem;
+}
+
+.error-notfound-image {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+    margin-left: 10px;
 }
 
 .error-text {
