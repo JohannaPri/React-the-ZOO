@@ -10,6 +10,14 @@ The project required us to create an interactive and responsive webpage that not
 
 ---
 
+## Link to project
+
+**When you visit the link, you will automatically land on my 404 page. To reach the homepage, simply click on the link that says "Go back to the homepage." You will then be directed to the correct page, where you can navigate around.**
+
+https://johannapri.github.io/React-the-ZOO/
+
+---
+
 ## 👩‍💻 Tech Stack 
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
