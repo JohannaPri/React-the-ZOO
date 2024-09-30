@@ -2,7 +2,6 @@
   "name": "fed22d-thezoo-template",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://johannapri.github.io/React-the-ZOO/",
   "type": "module",
   "scripts": {
     "dev": "vite",
