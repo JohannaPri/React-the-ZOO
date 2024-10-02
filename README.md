@@ -43,6 +43,8 @@ https://johannapri.github.io/React-the-ZOO/
 
 ---
 
+## Created by
+
 [![Github](https://img.shields.io/badge/Johanna%20Prinz-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JohannaPri)
 
 [![LinkdIn](https://img.shields.io/badge/Johanna%20Prinz-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johanna-prinz-246b45165/)
