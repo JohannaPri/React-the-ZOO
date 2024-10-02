@@ -33,7 +33,7 @@ https://johannapri.github.io/React-the-ZOO/
 ## ⚙️ How To Run The Project
 
 - #### **Clone the repository from GitHub:**
-    - git clone https://github.com/Medieinstitutet/the-zoo-JohannaPri
+    - git clone https://github.com/JohannaPri/React-the-ZOO.git
 
 - #### **Install the dependencies:**
     - npm install
