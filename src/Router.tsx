@@ -7,29 +7,34 @@ import { Animal } from "./pages/Animal";
 import { animalsLoader } from "./loaders/animalsLoader";
 import { NotFound } from "./pages/NotFound";
 
-export const router = createBrowserRouter ([
-    {
-        path: "/",
-        element: <Layout></Layout>,
-        errorElement: <NotFound></NotFound>,
-        children: [
-            {
-                path: "/",
-                element: <Home></Home>,
-            },
-            {
-                path: "/about",
-                element: <About></About>,
-            },
-            {
-                path: "/animals",
-                element: <Animals></Animals>,
-                loader: animalsLoader,
-            },
-            {
-                path: "/animal/:id",
-                element: <Animal></Animal>,
-            },
-        ],
-    },
-]);
+export const repo = "/React-the-ZOO/";
+
+export const router = createBrowserRouter (
+[
+        {
+            path: "/",
+            element: <Layout></Layout>,
+            errorElement: <NotFound></NotFound>,
+            children: [
+                {
+                    path: "/",
+                    element: <Home></Home>,
+                },
+                {
+                    path: "/about",
+                    element: <About></About>,
+                },
+                {
+                    path: "/animals",
+                    element: <Animals></Animals>,
+                    loader: animalsLoader,
+                },
+                {
+                    path: "/animal/:id",
+                    element: <Animal></Animal>,
+                },
+            ],
+        },
+    ],
+    { basename: repo }
+);
