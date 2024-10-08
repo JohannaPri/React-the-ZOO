@@ -7,7 +7,7 @@ import { Animal } from "./pages/Animal";
 import { animalsLoader } from "./loaders/animalsLoader";
 import { NotFound } from "./pages/NotFound";
 
-const repo = "/React-the-ZOO/";
+export const repo = "/React-the-ZOO/";
 
 export const router = createBrowserRouter (
 [
