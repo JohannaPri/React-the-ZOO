@@ -12,7 +12,7 @@ The project required us to create an interactive and responsive webpage that not
 
 ## Link To Project
 
-**When you visit the link, you will automatically land on my 404 page. To reach the homepage, simply click on the link that says "Go back to the homepage." You will then be directed to the correct page, where you can navigate around.**
+**Click the link below to access the project:**
 
 https://johannapri.github.io/React-the-ZOO/
 
